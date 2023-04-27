@@ -64,7 +64,7 @@ main {
 	text-shadow: 3px 3px black;
 }
 .title:hover {
-	color: #db3786;
+	color: #d88db1;
 	transform: scale(00.8rem);
 }
 .main-contacto {
@@ -72,7 +72,7 @@ main {
 	justify-content: center;
 }
 .form-contacto {
-	background-color: #db3786;
+	background-color: #d88db1;
 	color: black;
 	margin: 1rem;
 	padding: 2rem;
@@ -96,17 +96,18 @@ table,
 tr,
 th,
 td {
-	color: #db3786;
+	color: white;
 	border: 1px solid rgb(0, 0, 0);
 	padding: 0.5rem 0.5rem;
 }
 table {
+	background-color: #d88db1;
 	text-align: center;
 	width: 90%;
 	margin: 1rem;
 }
 tr th {
-	background-color: #000000;
+	background-color: black;
 }
 tbody {
 	background-color: rgba(0, 0, 0, 0.079);
