@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+	font-family: "Nunito", sans-serif;
+	font-size: 20px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.nav-link {
+	background-color: #d88db1;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+}
+.body-index {
+	background-color: #db3786;
+}
+.carousel-item {
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+}
+
+.carousel-title {
+	background-color: #d88db1;
+	color: black;
+	padding: 0.8rem;
+}
+
+footer {
+	background-color: #000000;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 12vh;
+}
+.logo-footer {
+	right: 20px;
+	width: 30px;
+}
+main {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 5rem;
+	background-color: #0000003a;
+	border-radius: 2rem;
+	color: #d88db1;
+	width: 80%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	text-shadow: 3px 3px black;
+}
+.title:hover {
+	color: #db3786;
+	transform: scale(00.8rem);
+}
+.main-contacto {
+	display: flex;
+	justify-content: center;
+}
+.form-contacto {
+	background-color: #db3786;
+	color: black;
+	margin: 1rem;
+	padding: 2rem;
+	height: fit-content;
+}
+.formulario {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5rem;
+	width: 30rem;
+}
+.boton {
+	background-color: black;
+	color: white;
+	width: 5rem;
+	padding: 0.5rem;
+	margin-top: 1rem;
+	border: none;
+}
+table,
+tr,
+th,
+td {
+	color: #db3786;
+	border: 1px solid rgb(0, 0, 0);
+	padding: 0.5rem 0.5rem;
+}
+table {
+	text-align: center;
+	width: 90%;
+	margin: 1rem;
+}
+tr th {
+	background-color: #000000;
+}
+tbody {
+	background-color: rgba(0, 0, 0, 0.079);
+}
+.checkbox {
+	padding: 0.8rem;
+	text-align: center;
+}
+.price {
+	margin-bottom: 0rem;
+}
+
+.caja1 {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 57.5vh;
+}
+.caja2 {
+	display: flex;
+	justify-content: center;
+	background-color: #d88db1;
+	border-radius: 2rem;
+}
+.caja2 img {
+	border-radius: 2rem;
+}
+.caja3 {
+	text-align: start;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	body {
+		width: 100%;
+	}
+	.list-home {
+		flex-direction: column;
+	}
+
+	.boton-home {
+		flex-wrap: wrap;
+	}
+
+	table,
+	tr,
+	th,
+	td {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.form-contacto {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.formulario {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.contacto-m {
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+	.boton {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	footer {
+		flex-direction: column;
+		height: 18vh;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.caja2 {
+		flex-direction: column;
+	}
+	.caja1 {
+		margin-top: 0;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+	.contacto-m {
+		margin-bottom: 1rem;
+		width: auto;
+	}
+	footer {
+		flex-direction: row;
+	}
+	.caja1 {
+		min-height: 57.7vh;
+	}
+}
+@media (min-width: 576px) {
+	.d-sm-flex {
+		display: flex !important;
+		flex-direction: row-reverse;
+		align-items: center;
+		margin-top: 1rem;
+	}
+}
