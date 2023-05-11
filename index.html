@@ -19,7 +19,7 @@
 		<title>Amazing Events</title>
 	</head>
 	<body class="body-index">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img src="./assets/Logo.png" alt="Logo" width="90" />
@@ -57,33 +57,12 @@
 				<div class="carousel-item active">
 					<h2 class="carousel-title">Home</h2>
 				</div>
-				<div class="carousel-item">
-					<h2 class="carousel-title">Upcoming Events</h2>
-				</div>
-				<div class="carousel-item">
-					<h2 class="carousel-title">Past Events</h2>
-				</div>
-				<div class="carousel-item">
-					<h2 class="carousel-title">Contact</h2>
-				</div>
-				<div class="carousel-item">
-					<h2 class="carousel-title">Stats</h2>
-				</div>
 			</div>
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carouselExample"
-				data-bs-slide="prev"
-			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Back</span>
-			</button>
 			<a
+				href="./pages/upcomingevents.html"
 				class="carousel-control-next"
 				type="button"
-				data-bs-target="#carouselExample"
-				data-bs-slide="next"
+				data-slide="next"
 			>
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span></a
@@ -94,77 +73,10 @@
 				class="list-home d-flex p-2 fw-bold columna"
 				action="#"
 				method="get"
-			>
-				<div class="checkbox">
-					<input
-						type="checkbox"
-						name="categoria"
-						value="Food Fair"
-						id="cate1"
-					/>
-					<label for="cate1">Food Fair</label>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" name="categoria" value="Museum" id="cate2" />
-					<label for="cate2">Museum</label>
-				</div>
-				<div class="checkbox">
-					<input
-						type="checkbox"
-						name="categoria"
-						value="Halloween Night"
-						id="cate3"
-					/>
-					<label for="cate3">Halloween Night</label>
-				</div>
-				<div class="checkbox">
-					<input
-						type="checkbox"
-						name="categoria"
-						value="Music Concert"
-						id="cate4"
-					/>
-					<label for="cate4">Music Concert</label>
-				</div>
-				<div class="checkbox">
-					<input type="checkbox" name="categoria" value="Race" id="cate5" />
-					<label for="cate5">Race</label>
-				</div>
-				<div class="checkbox">
-					<input
-						type="checkbox"
-						name="categoria"
-						value="Book Exchange"
-						id="cate6"
-					/>
-					<label for="cate6">Book Exchange</label>
-				</div>
-				<div class="checkbox">
-					<input
-						type="checkbox"
-						name="categoria"
-						value="Let's go to the cinema"
-						id="cate7"
-					/>
-					<label for="cate7">Let's go to the cinema</label>
-				</div>
-			</form>
+				id="form"
+			></form>
 			<form class="d-flex" role="search" action="#" method="get">
-				<input class="form-control me-2" type="search" />
-				<button class="btn btn-dark" type="submit">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="16"
-						height="16"
-						fill="currentColor"
-						class="bi bi-search"
-						viewBox="0 0 16 16"
-					>
-						<path
-							d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-						/>
-					</svg>
-				</button>
+				<input class="form-control me-2" type="search" id="buscador" />
 			</form>
 		</div>
 		<main id="main-card"></main>

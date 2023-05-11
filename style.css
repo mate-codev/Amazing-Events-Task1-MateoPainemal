@@ -6,6 +6,13 @@
 	font-family: "Nunito", sans-serif;
 	font-size: 20px;
 }
+.card {
+	width: 190px;
+	height: 254px;
+	border-radius: 30px;
+	background: #212121;
+	box-shadow: 12px 12px 20px rgb(25, 25, 25), -12px -12px 20px rgb(60, 60, 60);
+}
 a {
 	text-decoration: none;
 	color: #000;
@@ -17,7 +24,12 @@ a {
 	border-radius: 1rem;
 }
 .body-index {
-	background-color: #db3786;
+	background: rgb(238, 174, 202);
+	background: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
 }
 .carousel-item {
 	justify-content: center;
@@ -26,9 +38,7 @@ a {
 }
 
 .carousel-title {
-	background-color: #d88db1;
 	color: black;
-	padding: 0.8rem;
 }
 .card-img-top {
 	height: 10rem;
@@ -54,7 +64,7 @@ footer p {
 	height: 70%;
 }
 footer {
-	background-color: #000000;
+	background-color: #d88db1;
 	color: white;
 	display: flex;
 	justify-content: space-around;
@@ -66,12 +76,38 @@ footer {
 	width: 30px;
 }
 main {
+	min-height: 55vh;
 	width: 100%;
 	display: flex;
-	text-align: center;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+ul {
+	list-style: none;
+}
+.caja1 {
+	margin: 1rem;
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 57.5vh;
+	align-content: center;
+}
+.caja2 {
+	display: flex;
+	border-radius: 2rem;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.caja2 img {
+	height: 14rem;
+	border-radius: 2rem;
+}
+.caja3 {
+	text-align: center !important;
+}
+
 .title {
 	display: flex;
 	justify-content: center;
@@ -94,10 +130,8 @@ main {
 	justify-content: center;
 }
 .form-contacto {
-	background-color: #d88db1;
 	color: black;
-	margin: 1rem;
-	padding: 2rem;
+	padding: 1.6rem;
 	height: fit-content;
 }
 .formulario {
@@ -107,13 +141,15 @@ main {
 	width: 30rem;
 }
 .boton {
-	background-color: black;
+	background-color: #d88db1;
+	border-radius: 2rem;
 	color: white;
 	width: 5rem;
 	padding: 0.5rem;
 	margin-top: 1rem;
 	border: none;
 }
+
 table,
 tr,
 th,
@@ -123,7 +159,6 @@ td {
 	padding: 0.5rem 0.5rem;
 }
 table {
-	background-color: #d88db1;
 	text-align: center;
 	width: 90%;
 	margin: 1rem;
@@ -153,7 +188,6 @@ tbody {
 .caja2 {
 	display: flex;
 	justify-content: center;
-	background-color: #d88db1;
 	border-radius: 2rem;
 }
 .caja2 img {
@@ -161,6 +195,31 @@ tbody {
 }
 .caja3 {
 	text-align: start;
+}
+/* inspired form gumroad website */
+.button {
+	text-decoration: none;
+	--bg: #000;
+	--hover-bg: #ff90e8;
+	--hover-text: #000;
+	color: #fff;
+	border: 1px solid var(--bg);
+	border-radius: 4px;
+	padding: 0.8rem;
+	background: var(--bg);
+	transition: 0.2s;
+}
+
+.button:hover {
+	color: var(--hover-text);
+	transform: translate(-0.25rem, -0.25rem);
+	background: var(--hover-bg);
+	box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+	transform: translate(0);
+	box-shadow: none;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	body {
