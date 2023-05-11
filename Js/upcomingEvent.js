@@ -64,7 +64,7 @@ $buscador.addEventListener(`input`, () => {
 });
 function pasarPantalla(arrayFiltrado, lugar) {
 	if (arrayFiltrado.length === 0) {
-		lugar.innerHTML = `<h2 class= "d-flex f-grow"> No hay resultado para la busqueda </h2>`;
+		lugar.innerHTML = `<h2 class= "d-flex f-grow"> There are no results for the search </h2>`;
 	} else {
 		const printPantalla = arrayFiltrado.map((e) => createCard(e)).join("");
 		lugar.innerHTML = printPantalla;

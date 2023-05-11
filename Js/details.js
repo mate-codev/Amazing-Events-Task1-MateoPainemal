@@ -22,7 +22,7 @@ function imprimirDetail(objectId) {
 						: `<li>Estimate: ${objectId.estimate}</li>`
 				} </li>
         <li>Price: ${objectId.price}</li>
-        <li>Description:${objectId.description}</li>
+        <li>Description: ${objectId.description}</li>
         </ul>
     </div>
 </div>`;
